@@ -54,7 +54,7 @@ Default CSS
 :root {
   --fontFamily: "Poppins", sans-serif;
   --headingFontFamily: "Unbounded", sans-serif;
-  --primaryColor: #A7FF37;
+  --primaryColor: #01CBD7;
   --secondaryColor: #586CEC;
   --paragraphColor: #555555;
   --whiteColor: #ffffff;
@@ -231,7 +231,7 @@ p:last-child {
   display: inline-block;
   color: var(--blackColor);
   transition: var(--transition);
-  background-color: var(--primaryColor);
+  background-color: #01CBD7;
   font-size: var(--fontSize);
   font-weight: 500;
 }
