@@ -11,7 +11,7 @@ const FooterTwo = () => {
                 <img
                   width={112}
                   height={60}
-                  src="/images/logo.svg"
+                  src="/images/logo.webp"
                   alt="logo"
                 />
               </Link>

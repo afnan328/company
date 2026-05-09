@@ -1,6 +1,6 @@
-import HomeThreeLayout from "@/layout/homeThreeLayout";
+// import HomeThreeLayout from "@/layout/homeThreeLayout";
 import HomeTwoLayout from "@/layout/homeTwoLayout";
-import RootLayout from "@/layout/root";
+// import RootLayout from "@/layout/root";
 import About from "@/pages/(innerPage)/about";
 import Blog from "@/pages/(innerPage)/blog";
 import BlogDetails from "@/pages/(innerPage)/blog-details";
@@ -14,20 +14,20 @@ import Register from "@/pages/(innerPage)/register";
 import Team from "@/pages/(innerPage)/team";
 import TeamDetails from "@/pages/(innerPage)/team-details";
 import TermsConditions from "@/pages/(innerPage)/terms-conditions";
-import Home from "@/pages/home";
+// import Home from "@/pages/home";
 import HomeTwo from "@/pages/home-2";
-import HomeThree from "@/pages/home-3";
+// import HomeThree from "@/pages/home-3";
 import { createBrowserRouter } from "react-router-dom";
 
 export const route = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout />,
+    element: <HomeTwoLayout />,
     errorElement: <NotFound />,
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <HomeTwo />,
       },
       {
         path: "/about",
@@ -83,24 +83,24 @@ export const route = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/home-2",
-    element: <HomeTwoLayout />,
-    children: [
-      {
-        path: "/home-2",
-        element: <HomeTwo />,
-      },
-    ],
-  },
-  {
-    path: "/home-3",
-    element: <HomeThreeLayout />,
-    children: [
-      {
-        path: "/home-3",
-        element: <HomeThree />,
-      },
-    ],
-  },
+  // {
+  //   path: "/home-2",
+  //   element: <HomeTwoLayout />,
+  //   children: [
+  //     {
+  //       path: "/home-2",
+  //       element: <HomeTwo />,
+  //     },
+  //   ],
+  // },
+  // {
+  //   path: "/home-3",
+  //   element: <HomeThreeLayout />,
+  //   children: [
+  //     {
+  //       path: "/home-3",
+  //       element: <HomeThree />,
+  //     },
+  //   ],
+  // },
 ]);
